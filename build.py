@@ -382,7 +382,8 @@ def main():
     shutil.copytree(os.path.join(ROOT, 'assets'), os.path.join(OUT, 'assets'))
     if BASE:
         css = os.path.join(OUT, 'assets', 'css', 'site.css')
-        open(css, 'w').write(open(css).read().replace('url(/', 'url(%s/' % BASE))
+        text = open(css, encoding='utf-8').read()
+        open(css, 'w', encoding='utf-8').write(text.replace('url(/', 'url(%s/' % BASE))
     build_pages()
     build_work()
     build_blog()
