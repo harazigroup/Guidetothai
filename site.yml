@@ -1,0 +1,34 @@
+# ---------------------------------------------------------------
+# guidetothai website settings
+# ---------------------------------------------------------------
+# Your live address. When guidetothai.co.th is connected change to:
+#   site_url: "https://guidetothai.co.th"   base_path: ""   custom_domain: "guidetothai.co.th"
+site_url: "https://harazigroup.github.io"
+# Leave "" when using a custom domain (guidetothai.co.th).
+# If you test on https://USERNAME.github.io/REPO-NAME/ put "/REPO-NAME" here.
+base_path: "/Guidetothai"
+# Write the domain here ONLY after it points to GitHub Pages (creates the CNAME file).
+custom_domain: ""
+whatsapp: "66638259901"
+instagram: "guidetothai"
+tiktok: "guidetothai"
+company: "Al Harazi Group Co., Ltd."
+registration: "0605568002147"
+founded: 2017
+
+# Photos used across the site. Replace any link with your own photo
+# (for example /assets/img/our-airport.jpg after uploading it to assets/img).
+images:
+  hero-bangkok: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb0462c816eb85bbafeb8b_hero-bangkok.jpg"
+  bangkok-night: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb0468e2de1966e9b4cd6f_bangkok-night.jpg"
+  hospital-lobby: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb046b08b8632626e8a014_hospital-lobby.jpg"
+  phuket: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb046ef993e067e0e7f9e8_phuket.jpg"
+  krabi: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb0474ee76a28b313d0abd_krabi.jpg"
+  hotel: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb04762ec28736e6093c3e_hotel.jpg"
+  vip-car: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb047afd7b7753f35fd527_vip-car.jpg"
+  hospital-building: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb047dd423991cbf649942_hospital-building.jpg"
+  airport: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb08930ebe54f4c0058ef1_airport.jpg"
+  cargo: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb0899fd7b7753f3603305_cargo.jpg"
+  office: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb089b1efce99d358973b3_office.jpg"
+  passport: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb089e1199ab5fcca47320_passport.jpg"
+  plane: "https://cdn.prod.website-files.com/6acb023f3ec8dceb8cd3949b/6acb08a133e846e23b490788_plane.jpg"
