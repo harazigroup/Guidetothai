@@ -1,0 +1,90 @@
+en:
+  html_lang: en
+  dir: ltr
+  name: English
+  short: EN
+  locale: en_US
+  blog_title: "Thailand news & guides"
+  blog_lead: "Visa rules, travel tips, medical trips and doing business in Thailand — written by our team on the ground."
+  blog_pill: "Blog"
+  read_more: "Read more"
+  all: "All"
+  updated: "Published"
+  sources: "Sources"
+  disclaimer: "This article is general information, not legal or medical advice. Rules change — always confirm with the official source or the Thai embassy before you travel."
+  back_to_blog: "← All articles"
+  related: "More articles"
+  need_help: "Need help with this?"
+  need_help_p: "Message us on WhatsApp and our Arabic-speaking team in Thailand will reply within 24 hours."
+  wa_btn: "Chat on WhatsApp"
+  min_read: "min read"
+  home: "Home"
+  not_found_title: "Page not found"
+  not_found_p: "The page you are looking for doesn't exist or has moved."
+  not_found_btn: "Back to home"
+  categories:
+    news: "Thailand news"
+    visas: "Visas & entry"
+    medical: "Medical"
+    business: "Business"
+    travel: "Travel"
+ar:
+  html_lang: ar
+  dir: rtl
+  name: عربي
+  short: عربي
+  locale: ar_AR
+  blog_title: "أخبار ودليل تايلند"
+  blog_lead: "قوانين التأشيرات، نصائح السفر، رحلات العلاج، والأعمال في تايلند — يكتبها فريقنا المقيم هناك."
+  blog_pill: "المدونة"
+  read_more: "اقرأ المزيد"
+  all: "الكل"
+  updated: "نُشر في"
+  sources: "المصادر"
+  disclaimer: "هذا المقال معلومات عامة وليس استشارة قانونية أو طبية. القوانين تتغير، فتأكد دائماً من المصدر الرسمي أو السفارة التايلندية قبل السفر."
+  back_to_blog: "→ كل المقالات"
+  related: "مقالات أخرى"
+  need_help: "تحتاج مساعدة في هذا؟"
+  need_help_p: "راسلنا على واتساب ويرد عليك فريقنا العربي في تايلند خلال 24 ساعة."
+  wa_btn: "تواصل عبر واتساب"
+  min_read: "دقائق قراءة"
+  home: "الرئيسية"
+  not_found_title: "الصفحة غير موجودة"
+  not_found_p: "الصفحة التي تبحث عنها غير موجودة أو تم نقلها."
+  not_found_btn: "العودة للرئيسية"
+  categories:
+    news: "أخبار تايلند"
+    visas: "التأشيرات والدخول"
+    medical: "العلاج"
+    business: "الأعمال"
+    travel: "السفر"
+th:
+  html_lang: th
+  dir: ltr
+  name: ไทย
+  short: ไทย
+  locale: th_TH
+  blog_title: "ข่าวและคู่มือประเทศไทย"
+  blog_lead: "กฎวีซ่า เคล็ดลับการเดินทาง การมารักษาตัว และการทำธุรกิจในไทย เขียนโดยทีมงานของเราในประเทศไทย"
+  blog_pill: "บล็อก"
+  read_more: "อ่านต่อ"
+  all: "ทั้งหมด"
+  updated: "เผยแพร่"
+  sources: "แหล่งที่มา"
+  disclaimer: "บทความนี้เป็นข้อมูลทั่วไป ไม่ใช่คำแนะนำทางกฎหมายหรือการแพทย์ กฎระเบียบอาจเปลี่ยนแปลง โปรดตรวจสอบกับแหล่งข้อมูลทางการหรือสถานทูตไทยก่อนเดินทาง"
+  back_to_blog: "← บทความทั้งหมด"
+  related: "บทความอื่น ๆ"
+  need_help: "ต้องการความช่วยเหลือเรื่องนี้?"
+  need_help_p: "ส่งข้อความหาเราทาง WhatsApp ทีมงานของเราในประเทศไทยจะตอบกลับภายใน 24 ชั่วโมง"
+  wa_btn: "แชทผ่าน WhatsApp"
+  min_read: "นาทีในการอ่าน"
+  home: "หน้าแรก"
+  not_found_title: "ไม่พบหน้านี้"
+  not_found_p: "ไม่พบหน้าที่คุณค้นหา หรือหน้านี้ถูกย้ายแล้ว"
+  not_found_btn: "กลับหน้าแรก"
+  categories:
+    news: "ข่าวประเทศไทย"
+    visas: "วีซ่าและการเข้าประเทศ"
+    medical: "การแพทย์"
+    business: "ธุรกิจ"
+    travel: "ท่องเที่ยว"

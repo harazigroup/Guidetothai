@@ -1,0 +1,136 @@
+# Our Work page. To use your own photos: upload them to assets/img/ and
+# replace "image:" with the file path, e.g.  image: /assets/img/airport-client.jpg
+# (only publish photos of people with their permission).
+filters:
+  - key: medical
+    en: Medical
+    ar: العلاج
+    th: การแพทย์
+  - key: vip
+    en: VIP & transport
+    ar: VIP والتنقل
+    th: VIP และการเดินทาง
+  - key: travel
+    en: Travel
+    ar: السياحة
+    th: ท่องเที่ยว
+  - key: logistics
+    en: Logistics
+    ar: اللوجستية
+    th: โลจิสติกส์
+  - key: business
+    en: Business
+    ar: الأعمال
+    th: ธุรกิจ
+
+items:
+  - image: airport
+    cat: vip
+    size: tall
+    en: { title: "VIP airport reception", text: "Meet & greet at the arrival gate and immigration fast track." }
+    ar: { title: "استقبال VIP في المطار", text: "استقبال من بوابة الوصول ومسار سريع في الجوازات." }
+    th: { title: "ต้อนรับ VIP ที่สนามบิน", text: "ต้อนรับที่ประตูขาเข้าและช่องทางด่วนตรวจคนเข้าเมือง" }
+  - image: hospital-lobby
+    cat: medical
+    size: wide
+    en: { title: "Hospital appointments", text: "Bookings at international hospitals with an Arabic interpreter." }
+    ar: { title: "مواعيد المستشفيات", text: "حجز في المستشفيات الدولية مع مترجم عربي." }
+    th: { title: "นัดหมายโรงพยาบาล", text: "นัดหมายโรงพยาบาลนานาชาติพร้อมล่ามภาษาอาหรับ" }
+  - image: vip-car
+    cat: vip
+    en: { title: "Private car with driver", text: "Airport, hospital and hotel transfers." }
+    ar: { title: "سيارة خاصة بسائق", text: "تنقلات بين المطار والمستشفى والفندق." }
+    th: { title: "รถส่วนตัวพร้อมคนขับ", text: "รับส่งสนามบิน โรงพยาบาล และโรงแรม" }
+  - image: phuket
+    cat: travel
+    size: tall
+    en: { title: "Family trips to Phuket", text: "Beaches, resorts and private villas." }
+    ar: { title: "رحلات عائلية إلى بوكيت", text: "شواطئ ومنتجعات وفلل خاصة." }
+    th: { title: "ทริปครอบครัวภูเก็ต", text: "ชายหาด รีสอร์ต และพูลวิลล่า" }
+  - image: hospital-building
+    cat: medical
+    en: { title: "Full check-ups", text: "Complete tests in a single day, explained in Arabic." }
+    ar: { title: "الفحص الشامل", text: "فحوصات كاملة في يوم واحد مع شرح النتائج بالعربي." }
+    th: { title: "ตรวจสุขภาพครบวงจร", text: "ตรวจครบภายในวันเดียว อธิบายผลเป็นภาษาอาหรับ" }
+  - image: krabi
+    cat: travel
+    size: wide
+    en: { title: "Island tours in Krabi", text: "Boat trips with an Arabic-speaking guide." }
+    ar: { title: "جولات الجزر في كرابي", text: "رحلات بحرية مع مرشد يتكلم العربي." }
+    th: { title: "ทัวร์เกาะกระบี่", text: "ล่องเรือพร้อมไกด์ภาษาอาหรับ" }
+  - image: hotel
+    cat: travel
+    en: { title: "Hotels & recovery stays", text: "Family-friendly hotels near the hospital." }
+    ar: { title: "الفنادق والنقاهة", text: "فنادق مناسبة للعائلات قريبة من المستشفى." }
+    th: { title: "โรงแรมและที่พักพักฟื้น", text: "โรงแรมสำหรับครอบครัวใกล้โรงพยาบาล" }
+  - image: cargo
+    cat: logistics
+    size: tall
+    en: { title: "Shipping to the Gulf", text: "Sea and air freight for travellers and traders." }
+    ar: { title: "الشحن إلى الخليج", text: "شحن بحري وجوي للمسافرين والتجار." }
+    th: { title: "ขนส่งไปอ่าวอาหรับ", text: "ขนส่งทางเรือและทางอากาศสำหรับนักเดินทางและผู้ค้า" }
+  - image: passport
+    cat: business
+    en: { title: "Visas & paperwork", text: "Tourist, medical, work and business visas." }
+    ar: { title: "التأشيرات والأوراق", text: "تأشيرات السياحة والعلاج والعمل والتجارة." }
+    th: { title: "วีซ่าและเอกสาร", text: "วีซ่าท่องเที่ยว รักษาพยาบาล ทำงาน และธุรกิจ" }
+  - image: office
+    cat: business
+    size: wide
+    en: { title: "Company setup", text: "Registering your company and legal translation." }
+    ar: { title: "فتح الشركات", text: "تسجيل شركتك والترجمة القانونية." }
+    th: { title: "จดทะเบียนบริษัท", text: "จดทะเบียนบริษัทและแปลเอกสารกฎหมาย" }
+  - image: bangkok-night
+    cat: travel
+    en: { title: "Bangkok", text: "Shopping, halal restaurants and parks." }
+    ar: { title: "بانكوك", text: "تسوق ومطاعم حلال وحدائق." }
+    th: { title: "กรุงเทพฯ", text: "ช้อปปิ้ง ร้านอาหารฮาลาล และสวนสาธารณะ" }
+  - image: plane
+    cat: vip
+    en: { title: "Flights", text: "International and domestic bookings." }
+    ar: { title: "حجوزات الطيران", text: "رحلات دولية وداخلية." }
+    th: { title: "ตั๋วเครื่องบิน", text: "จองเที่ยวบินระหว่างประเทศและในประเทศ" }
+
+text:
+  en:
+    title: "Our work in Thailand | guidetothai"
+    description: "A look at what we do every day in Thailand: VIP airport reception, hospital appointments, family trips, shipping and company setup."
+    pill: "Our work"
+    h1: "Every day, on the ground in Thailand"
+    lead: "Since 2017 we have been meeting travellers at the airport, walking patients into hospital appointments, planning family trips and shipping goods home."
+    stats:
+      - { n: "2017", t: "In the market since" }
+      - { n: "8", t: "Services under one roof" }
+      - { n: "3", t: "Languages: Arabic · English · Thai" }
+    gallery_eyebrow: "Gallery"
+    gallery_h: "What we do"
+    follow_h: "Follow our journeys"
+    follow_p: "We share real trips, hospital visits and tips from Thailand on Instagram and TikTok."
+  ar:
+    title: "أعمالنا في تايلند | دليلك إلى تايلند"
+    description: "نظرة على ما نقدمه يومياً في تايلند: استقبال VIP في المطار، مواعيد المستشفيات، الرحلات العائلية، الشحن وفتح الشركات."
+    pill: "أعمالنا"
+    h1: "كل يوم، معك على أرض تايلند"
+    lead: "منذ 2017 ونحن نستقبل المسافرين في المطار، ونرافق المرضى إلى مواعيدهم، ونخطط رحلات العائلات، ونشحن البضائع إلى بلدانهم."
+    stats:
+      - { n: "2017", t: "في السوق منذ" }
+      - { n: "8", t: "خدمات في مكان واحد" }
+      - { n: "3", t: "لغات: عربي · إنجليزي · تايلندي" }
+    gallery_eyebrow: "المعرض"
+    gallery_h: "ماذا نقدم"
+    follow_h: "تابع رحلاتنا"
+    follow_p: "ننشر رحلات حقيقية وزيارات المستشفيات ونصائح من تايلند على إنستغرام وتيك توك."
+  th:
+    title: "ผลงานของเราในประเทศไทย | guidetothai"
+    description: "สิ่งที่เราทำทุกวันในประเทศไทย: ต้อนรับ VIP ที่สนามบิน นัดหมายโรงพยาบาล ทริปครอบครัว ขนส่งสินค้า และจดทะเบียนบริษัท"
+    pill: "ผลงานของเรา"
+    h1: "ทุกวัน เราอยู่เคียงข้างคุณในประเทศไทย"
+    lead: "ตั้งแต่ปี 2017 เราต้อนรับนักเดินทางที่สนามบิน พาผู้ป่วยไปพบแพทย์ วางแผนทริปครอบครัว และส่งสินค้ากลับบ้าน"
+    stats:
+      - { n: "2017", t: "ให้บริการตั้งแต่ปี" }
+      - { n: "8", t: "บริการครบในที่เดียว" }
+      - { n: "3", t: "ภาษา: อาหรับ · อังกฤษ · ไทย" }
+    gallery_eyebrow: "แกลเลอรี"
+    gallery_h: "สิ่งที่เราทำ"
+    follow_h: "ติดตามการเดินทางของเรา"
+    follow_p: "เราแชร์ทริปจริง การไปโรงพยาบาล และเคล็ดลับจากประเทศไทยบน Instagram และ TikTok"
