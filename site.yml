@@ -1,14 +1,13 @@
 # ---------------------------------------------------------------
 # guidetothai website settings
 # ---------------------------------------------------------------
-# Your live address. When guidetothai.co.th is connected change to:
-#   site_url: "https://guidetothai.co.th"   base_path: ""   custom_domain: "guidetothai.co.th"
-site_url: "https://harazigroup.github.io"
-# Leave "" when using a custom domain (guidetothai.co.th).
+# Your live address.
+site_url: "https://guidetothai.co"
+# Leave "" when using a custom domain (guidetothai.co).
 # If you test on https://USERNAME.github.io/REPO-NAME/ put "/REPO-NAME" here.
-base_path: "/Guidetothai"
+base_path: ""
 # Write the domain here ONLY after it points to GitHub Pages (creates the CNAME file).
-custom_domain: ""
+custom_domain: "guidetothai.co"
 whatsapp: "66638259901"
 instagram: "guidetothai"
 tiktok: "guidetothai"
