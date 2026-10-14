@@ -24,6 +24,23 @@ filters:
     th: ธุรกิจ
 
 items:
+  - image: /assets/img/client-registration-1.jpg
+    cat: medical
+    size: wide
+    en: { title: "Registering our clients at the hospital", text: "We sit with every client at registration in a leading Bangkok international hospital and translate each step." }
+    ar: { title: "تسجيل عملائنا في المستشفى", text: "نرافق كل عميل عند التسجيل في مستشفى دولي في بانكوك ونترجم له كل خطوة." }
+    th: { title: "ลงทะเบียนลูกค้าที่โรงพยาบาล", text: "เราอยู่กับลูกค้าทุกคนตอนลงทะเบียนที่โรงพยาบาลนานาชาติชั้นนำในกรุงเทพฯ และแปลทุกขั้นตอน" }
+  - image: /assets/img/client-registration-3.jpg
+    cat: medical
+    size: tall
+    en: { title: "With you at the counter", text: "Our team handles the paperwork so you can focus on your treatment." }
+    ar: { title: "معك عند الكاونتر", text: "فريقنا يتولى الأوراق والإجراءات وأنت تركز على علاجك." }
+    th: { title: "อยู่เคียงข้างคุณที่เคาน์เตอร์", text: "ทีมของเราจัดการเอกสารให้ คุณจึงโฟกัสกับการรักษาได้เต็มที่" }
+  - image: /assets/img/client-registration-2.jpg
+    cat: medical
+    en: { title: "Hospital reception in Bangkok", text: "Families checked in together, with an Arabic-speaking coordinator." }
+    ar: { title: "استقبال في مستشفى ببانكوك", text: "تسجيل العائلات معاً مع منسق يتكلم العربي." }
+    th: { title: "ต้อนรับที่โรงพยาบาลในกรุงเทพฯ", text: "ลงทะเบียนพร้อมกันทั้งครอบครัว มีผู้ประสานงานพูดภาษาอาหรับ" }
   - image: airport
     cat: vip
     size: tall
