@@ -1,0 +1,209 @@
+# ---------------------------------------------------------------
+# Partner hospitals and medical centres
+# ---------------------------------------------------------------
+# To add a partner: copy one block under "partners", change the text,
+# and save. The page /partners/ (and /ar/partners/, /th/partners/)
+# is rebuilt automatically. Logos: put the file in assets/img/ and set
+# logo: /assets/img/name.jpg (only if the contract allows logo use).
+# Leave logo: "" to show the name only.
+
+text:
+  en:
+    title: "Our partner hospitals in Thailand | guidetothai"
+    description: "Book treatment at Piyavate, BPK 9 International, Phyathai, Inspire IVF and Miracle Regenerative Center in Bangkok, with an Arabic-speaking coordinator from guidetothai."
+    pill: "Partner hospitals"
+    h1: "Our partner hospitals and medical centres in Thailand"
+    lead: "We work directly with these hospitals and clinics in Bangkok. Send your reports and we book the right doctor, with an Arabic-speaking coordinator at every visit."
+    cta: "Free consultation"
+    eyebrow: "Our partners"
+    h2: "Hospitals we work with directly"
+    sub: "Each partner below has an agreement with guidetothai. We arrange the appointment, interpreter and transport for you."
+    area: "Location"
+    known: "Main specialties"
+    book: "Book through us"
+    site: "Official website"
+    more: "See details"
+    wa_msg: "Hello guidetothai, I would like an appointment at {name}."
+    why_eyebrow: "Why book through us"
+    why_h: "One team from your first message to your flight home"
+    why:
+      - {h: "Arabic-speaking coordinator", p: "With you at every appointment, and translating with the doctor."}
+      - {h: "Cost estimate before you travel", p: "We send your reports and get the hospital's plan and estimate."}
+      - {h: "Visa, airport and hotel", p: "Medical visa letter, VIP airport pickup and a hotel near the hospital."}
+      - {h: "Follow-up at home", p: "We stay in touch with the hospital after you return."}
+    note: "Partner listings are for information. Prices and treatment plans are set by each hospital after the doctor's assessment."
+  ar:
+    title: "المستشفيات الشريكة في تايلند | guidetothai"
+    description: "احجز علاجك في مستشفى بيافيت، ومستشفى BPK 9 الدولي، ومستشفيات بياتاي، وInspire IVF، ومركز Miracle للطب التجديدي في بانكوك، مع منسّق عربي من guidetothai."
+    pill: "المستشفيات الشريكة"
+    h1: "مستشفياتنا ومراكزنا الطبية الشريكة في تايلند"
+    lead: "نتعامل مباشرة مع هذه المستشفيات والمراكز في بانكوك. أرسل تقاريرك ونحجز لك عند الطبيب المناسب، ومعك منسّق عربي في كل موعد."
+    cta: "استشارة مجانية"
+    eyebrow: "شركاؤنا"
+    h2: "مستشفيات نتعامل معها مباشرة"
+    sub: "كل شريك هنا تربطه اتفاقية مع guidetothai. نرتّب لك الموعد والمترجم والتنقل."
+    area: "الموقع"
+    known: "أبرز التخصصات"
+    book: "احجز عن طريقنا"
+    site: "الموقع الرسمي"
+    more: "التفاصيل"
+    wa_msg: "مرحباً guidetothai، أرغب في حجز موعد في {name}."
+    why_eyebrow: "لماذا تحجز عن طريقنا"
+    why_h: "فريق واحد من أول رسالة حتى رجوعك"
+    why:
+      - {h: "منسّق عربي", p: "معك في كل موعد، ويترجم بينك وبين الطبيب."}
+      - {h: "تقدير التكلفة قبل السفر", p: "نرسل تقاريرك للمستشفى ونأخذ لك الخطة والتكلفة التقديرية."}
+      - {h: "التأشيرة والمطار والسكن", p: "خطاب التأشيرة العلاجية، واستقبال VIP في المطار، وفندق قريب من المستشفى."}
+      - {h: "متابعة بعد العودة", p: "نبقى على تواصل مع المستشفى بعد رجوعك إلى بلدك."}
+    note: "المعلومات للتعريف فقط. الأسعار وخطة العلاج يحددها كل مستشفى بعد تقييم الطبيب."
+  th:
+    title: "โรงพยาบาลพันธมิตรของเราในประเทศไทย | guidetothai"
+    description: "นัดหมายการรักษาที่โรงพยาบาลปิยะเวท บางปะกอก 9 อินเตอร์เนชั่นแนล พญาไท Inspire IVF และ Miracle Regenerative Center ในกรุงเทพฯ พร้อมผู้ประสานงานภาษาอาหรับจาก guidetothai"
+    pill: "โรงพยาบาลพันธมิตร"
+    h1: "โรงพยาบาลและศูนย์การแพทย์พันธมิตรของเราในประเทศไทย"
+    lead: "เราทำงานร่วมกับโรงพยาบาลและคลินิกเหล่านี้ในกรุงเทพฯ โดยตรง ส่งผลตรวจของคุณมา แล้วเราจะนัดแพทย์ที่เหมาะสม พร้อมผู้ประสานงานภาษาอาหรับทุกครั้ง"
+    cta: "ปรึกษาฟรี"
+    eyebrow: "พันธมิตรของเรา"
+    h2: "โรงพยาบาลที่เราทำงานด้วยโดยตรง"
+    sub: "พันธมิตรทุกแห่งมีข้อตกลงกับ guidetothai เราจัดการนัดหมาย ล่าม และการเดินทางให้คุณ"
+    area: "ที่ตั้ง"
+    known: "ความเชี่ยวชาญหลัก"
+    book: "นัดหมายผ่านเรา"
+    site: "เว็บไซต์ทางการ"
+    more: "ดูรายละเอียด"
+    wa_msg: "สวัสดี guidetothai ต้องการนัดหมายที่ {name}"
+    why_eyebrow: "ทำไมต้องนัดผ่านเรา"
+    why_h: "ทีมเดียวดูแลตั้งแต่ข้อความแรกจนถึงเที่ยวบินกลับบ้าน"
+    why:
+      - {h: "ผู้ประสานงานภาษาอาหรับ", p: "อยู่กับคุณทุกนัด และช่วยแปลกับแพทย์"}
+      - {h: "ประเมินค่าใช้จ่ายก่อนเดินทาง", p: "เราส่งผลตรวจให้โรงพยาบาล และขอแผนการรักษากับค่าใช้จ่ายโดยประมาณ"}
+      - {h: "วีซ่า สนามบิน และที่พัก", p: "จดหมายสำหรับวีซ่าการรักษา รับ VIP ที่สนามบิน และโรงแรมใกล้โรงพยาบาล"}
+      - {h: "ติดตามผลหลังกลับบ้าน", p: "เราติดต่อกับโรงพยาบาลต่อหลังจากคุณกลับบ้าน"}
+    note: "ข้อมูลพันธมิตรเพื่อการแนะนำเท่านั้น ราคาและแผนการรักษากำหนดโดยโรงพยาบาลหลังการประเมินของแพทย์"
+
+partners:
+  - key: piyavate
+    initials: "PV"
+    type: hospital
+    website: "https://www.piyavate.com/en/"
+    logo: ""
+    badges: ["JCI", "HA"]
+    en:
+      name: "Piyavate Hospital"
+      kind: "Private hospital"
+      area: "Rama 9, Huai Khwang, Bangkok"
+      about: "A JCI-accredited private hospital on Rama 9 Road with a dedicated international service centre and more than 20 specialist centres."
+      tags: ["Heart", "Orthopaedics", "Health check-up", "Fertility", "Cancer & radiotherapy", "Plastic surgery", "Eye & LASIK"]
+    ar:
+      name: "مستشفى بيافيت"
+      kind: "مستشفى خاص"
+      area: "شارع راما 9، هواي كوانغ، بانكوك"
+      about: "مستشفى خاص معتمد من JCI على شارع راما 9، فيه مركز لخدمة المرضى الدوليين وأكثر من 20 مركزاً تخصصياً."
+      tags: ["القلب", "العظام والمفاصل", "الفحص الشامل", "الخصوبة", "الأورام والعلاج الإشعاعي", "التجميل", "العيون والليزك"]
+    th:
+      name: "โรงพยาบาลปิยะเวท"
+      kind: "โรงพยาบาลเอกชน"
+      area: "ถนนพระราม 9 เขตห้วยขวาง กรุงเทพฯ"
+      about: "โรงพยาบาลเอกชนที่ได้รับการรับรอง JCI บนถนนพระราม 9 มีศูนย์บริการผู้ป่วยต่างชาติและศูนย์เฉพาะทางกว่า 20 ศูนย์"
+      tags: ["หัวใจ", "กระดูกและข้อ", "ตรวจสุขภาพ", "ภาวะมีบุตรยาก", "มะเร็งและรังสีรักษา", "ศัลยกรรมตกแต่ง", "ตาและเลสิก"]
+
+  - key: bpk9
+    initials: "B9"
+    type: hospital
+    website: "https://www.bpk9internationalhospital.com/en/"
+    logo: ""
+    badges: ["JCI", "HA"]
+    en:
+      name: "BPK 9 International Hospital"
+      kind: "International hospital"
+      area: "Rama 2 Road, Chom Thong, Bangkok"
+      about: "The international hospital of the BPK Hospital Group, accredited by JCI, with 28 medical centres under one roof."
+      tags: ["Heart", "Orthopaedics", "Check-up & vaccines", "Fertility", "Obesity & weight loss", "Cosmetic surgery", "Dental"]
+    ar:
+      name: "مستشفى BPK 9 الدولي"
+      kind: "مستشفى دولي"
+      area: "شارع راما 2، تشوم ثونغ، بانكوك"
+      about: "المستشفى الدولي التابع لمجموعة مستشفيات BPK، معتمد من JCI، ويضم 28 مركزاً طبياً تحت سقف واحد."
+      tags: ["القلب", "العظام والمفاصل", "الفحص الشامل واللقاحات", "الخصوبة", "السمنة وإنقاص الوزن", "التجميل", "الأسنان"]
+    th:
+      name: "โรงพยาบาลบางปะกอก 9 อินเตอร์เนชั่นแนล"
+      kind: "โรงพยาบาลนานาชาติ"
+      area: "ถนนพระราม 2 เขตจอมทอง กรุงเทพฯ"
+      about: "โรงพยาบาลนานาชาติในเครือโรงพยาบาลบางปะกอก ได้รับการรับรอง JCI มีศูนย์การแพทย์ 28 ศูนย์ในที่เดียว"
+      tags: ["หัวใจ", "กระดูกและข้อ", "ตรวจสุขภาพและวัคซีน", "ภาวะมีบุตรยาก", "โรคอ้วน", "ศัลยกรรมความงาม", "ทันตกรรม"]
+
+  - key: phyathai
+    initials: "PT"
+    type: hospital
+    website: "https://www.phyathai.com/en/"
+    logo: ""
+    badges: ["HA", "BDMS"]
+    en:
+      name: "Phyathai Hospitals"
+      kind: "Hospital group"
+      area: "Several branches in Bangkok"
+      about: "One of Thailand's longest-running private hospital groups, founded in 1976 and part of the BDMS network, with branches across Bangkok."
+      tags: ["Heart", "Cancer", "Brain & neuroscience", "Bone & joint", "Women's health", "Children", "Eye"]
+    ar:
+      name: "مستشفيات بياتاي"
+      kind: "مجموعة مستشفيات"
+      area: "عدة فروع في بانكوك"
+      about: "من أقدم مجموعات المستشفيات الخاصة في تايلند، تأسست عام 1976 وهي ضمن شبكة BDMS، ولها فروع في أنحاء بانكوك."
+      tags: ["القلب", "الأورام", "المخ والأعصاب", "العظام والمفاصل", "صحة المرأة", "الأطفال", "العيون"]
+    th:
+      name: "โรงพยาบาลพญาไท"
+      kind: "เครือโรงพยาบาล"
+      area: "หลายสาขาในกรุงเทพฯ"
+      about: "เครือโรงพยาบาลเอกชนที่เก่าแก่แห่งหนึ่งของไทย ก่อตั้งในปี 2519 อยู่ในเครือ BDMS มีสาขาทั่วกรุงเทพฯ"
+      tags: ["หัวใจ", "มะเร็ง", "สมองและระบบประสาท", "กระดูกและข้อ", "สุขภาพสตรี", "เด็ก", "ตา"]
+
+  - key: inspire-ivf
+    initials: "IV"
+    type: fertility
+    website: ""
+    details: "/ivf/"
+    logo: /assets/img/inspire-ivf-logo.jpg
+    badges: ["IVF"]
+    en:
+      name: "Inspire IVF"
+      kind: "Fertility centre"
+      area: "Bangkok"
+      about: "An internationally accredited fertility centre with its own embryology and genetics lab. More than 80% of its patients come from abroad."
+      tags: ["IVF / ICSI", "Genetic testing (PGT)", "Egg freezing", "Male fertility"]
+    ar:
+      name: "Inspire IVF"
+      kind: "مركز خصوبة"
+      area: "بانكوك"
+      about: "مركز خصوبة معتمد دولياً، فيه مختبر أجنّة وجينات خاص به، وأكثر من 80% من مرضاه من خارج تايلند."
+      tags: ["أطفال الأنابيب والحقن المجهري", "الفحص الجيني PGT", "تجميد البويضات", "خصوبة الرجال"]
+    th:
+      name: "Inspire IVF"
+      kind: "ศูนย์รักษาภาวะมีบุตรยาก"
+      area: "กรุงเทพฯ"
+      about: "ศูนย์รักษาภาวะมีบุตรยากที่ได้รับการรับรองระดับสากล มีห้องปฏิบัติการตัวอ่อนและพันธุกรรมของตนเอง ผู้ป่วยกว่า 80% มาจากต่างประเทศ"
+      tags: ["IVF / ICSI", "ตรวจพันธุกรรม PGT", "ฝากไข่", "ภาวะมีบุตรยากในชาย"]
+
+  - key: miracle-regen
+    initials: "MR"
+    type: clinic
+    website: "https://miracleregen.com"
+    logo: ""
+    badges: ["MOPH"]
+    en:
+      name: "Miracle Regenerative Center"
+      kind: "Regenerative medicine clinic"
+      area: "Bangkok Mediplex, Sukhumvit 42, Bangkok"
+      about: "A Ministry of Public Health licensed clinic for cell therapy, IV infusions and longevity programmes, with a free first consultation."
+      tags: ["Stem cell therapy", "Joint care", "IV & NAD+ infusions", "Longevity", "Skin rejuvenation"]
+    ar:
+      name: "مركز Miracle للطب التجديدي"
+      kind: "عيادة طب تجديدي"
+      area: "بانكوك ميديبلكس، سوكومفيت 42، بانكوك"
+      about: "عيادة مرخّصة من وزارة الصحة التايلندية للعلاج بالخلايا، والمغذيات الوريدية، وبرامج إطالة العمر الصحي، والاستشارة الأولى مجانية."
+      tags: ["العلاج بالخلايا الجذعية", "علاج المفاصل", "المغذيات الوريدية وNAD+", "إطالة العمر الصحي", "تجديد البشرة"]
+    th:
+      name: "Miracle Regenerative Center"
+      kind: "คลินิกเวชศาสตร์ฟื้นฟู"
+      area: "Bangkok Mediplex สุขุมวิท 42 กรุงเทพฯ"
+      about: "คลินิกที่ได้รับอนุญาตจากกระทรวงสาธารณสุข ให้บริการเซลล์บำบัด การให้สารอาหารทางหลอดเลือด และโปรแกรมชะลอวัย ปรึกษาครั้งแรกฟรี"
+      tags: ["สเต็มเซลล์", "ดูแลข้อ", "IV และ NAD+", "ชะลอวัย", "ฟื้นฟูผิว"]

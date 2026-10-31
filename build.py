@@ -238,6 +238,58 @@ def build_work():
     SITEMAP.append((alternates, TODAY))
 
 
+# ---------------------------------------------------------------- partners
+def build_partners():
+    from urllib.parse import quote
+    data = yaml.safe_load(open(os.path.join(C, 'data', 'partners.yml'), encoding='utf-8'))
+    rest = '/partners/'
+    alternates = {l: lang_path(l, rest) for l in LANGS}
+    pin = ('<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">'
+           '<path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>')
+    for lang in LANGS:
+        t = data['text'][lang]
+        cards = ''
+        for p in data['partners']:
+            x = p[lang]
+            initials = p.get('initials') or ''.join(w[0] for w in p['en']['name'].split()[:2]).upper()
+            mark = ('<img src="%s" alt="%s" loading="lazy" decoding="async">' % (esc(p['logo']), esc(x['name']))
+                    if p.get('logo') else '<span>%s</span>' % esc(initials))
+            badges = ''.join('<span class="gt-pt-badge">%s</span>' % esc(b) for b in p.get('badges', []))
+            tags = ''.join('<li>%s</li>' % esc(tg) for tg in x.get('tags', []))
+            wa = WA + '?text=' + quote(t['wa_msg'].replace('{name}', x['name']))
+            if p.get('details'):
+                second = '<a class="gt-pt-link" href="%s">%s</a>' % (lang_path(lang, p['details']), esc(t['more']))
+            elif p.get('website'):
+                second = '<a class="gt-pt-link" href="%s" target="_blank" rel="noopener">%s</a>' % (esc(p['website']), esc(t['site']))
+            else:
+                second = ''
+            cards += f'''<article class="gt-pt" id="{esc(p['key'])}"><div class="gt-pt-top"><div class="gt-pt-mark">{mark}</div><div><div class="gt-pt-kind">{esc(x['kind'])}</div><h3 class="gt-pt-name">{esc(x['name'])}</h3><div class="gt-pt-badges">{badges}</div></div></div>
+<p class="gt-pt-area">{pin}<span><b>{esc(t['area'])}:</b> {esc(x['area'])}</span></p>
+<p class="gt-pt-about">{esc(x['about'])}</p>
+<div class="gt-pt-known">{esc(t['known'])}</div><ul class="gt-pt-tags">{tags}</ul>
+<div class="gt-pt-actions"><a class="gt-pt-btn" href="{esc(wa)}" target="_blank" rel="noopener">{esc(t['book'])}</a>{second}</div></article>'''
+        why = ''.join('<div class="gt-step"><div class="gt-num">%d</div><h4 class="gt-h4">%s</h4><p class="gt-step-p">%s</p></div>' % (i + 1, esc(w['h']), esc(w['p']))
+                      for i, w in enumerate(t['why']))
+        body = f'''<section class="gt-ph gt-ph-med"><div class="gt-ph-inner"><div class="gt-pill">{esc(t['pill'])}</div><h1 class="gt-ph-h">{esc(t['h1'])}</h1><p class="gt-ph-p">{esc(t['lead'])}</p><a class="gt-btn" href="{WA}" target="_blank" rel="noopener">{esc(t['cta'])}</a></div></section>
+<section class="gt-sec"><div class="gt-wrap"><div class="gt-head"><div class="gt-eyebrow">{esc(t['eyebrow'])}</div><h2 class="gt-h2">{esc(t['h2'])}</h2><p class="gt-sub">{esc(t['sub'])}</p></div>
+<div class="gt-pt-grid">{cards}</div><p class="gt-note">{esc(t['note'])}</p></div></section>
+<section class="gt-sec gt-sec-soft"><div class="gt-wrap"><div class="gt-head"><div class="gt-eyebrow">{esc(t['why_eyebrow'])}</div><h2 class="gt-h2">{esc(t['why_h'])}</h2></div><div class="gt-steps gt-pt-why">{why}</div></div></section>
+{partial('cta', lang)}'''
+        orgs = []
+        for p in data['partners']:
+            o = {"@type": "Hospital" if p['type'] == 'hospital' else "MedicalClinic", "name": p['en']['name'],
+                 "address": {"@type": "PostalAddress", "addressLocality": "Bangkok", "addressCountry": "TH"}}
+            if p.get('website'):
+                o['url'] = p['website']
+            orgs.append(o)
+        jsonld = [breadcrumbs(lang, [(I18N[lang]['home'], lang_path(lang, '/')), (t['pill'], alternates[lang])]),
+                  {"@type": "ItemList", "name": t['h2'], "itemListElement": [
+                      {"@type": "ListItem", "position": i + 1, "item": o} for i, o in enumerate(orgs)]}]
+        write(alternates[lang], layout(lang, alternates[lang], t['title'], t['description'], body, alternates,
+                                       image='hospital-building', jsonld=jsonld))
+    SITEMAP.append((alternates, TODAY))
+
+
 # ---------------------------------------------------------------- blog
 def load_posts():
     posts = []
@@ -388,6 +440,7 @@ def main():
         open(css, 'w', encoding='utf-8').write(text.replace('url(/', 'url(%s/' % BASE))
     build_pages()
     build_work()
+    build_partners()
     build_blog()
     build_extras()
     n = sum(len(f) for _, _, f in os.walk(OUT))
