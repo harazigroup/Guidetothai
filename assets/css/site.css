@@ -402,3 +402,10 @@ div.gt-svc .gt-svc-dot::before{display:none}
 .gt-price-card .gt-btn{text-align:center}
 @media (max-width:900px){.gt-co-grid{grid-template-columns:1fr}.gt-co-side{position:static}}
 @media (max-width:640px){.gt-co-pkgs,.gt-co-fields,.gt-price-cards{grid-template-columns:1fr}.gt-co-wide{grid-column:auto}}
+/* ---- partner logo strip (home) ---- */
+.gt-logos{padding:34px 0;border-bottom:1px solid #eef1f8;background:#fff;font-family:Tajawal}
+.gt-logos-h{text-align:center;color:#6b7290;font-weight:700;font-size:15px;letter-spacing:.5px;margin-bottom:18px}
+.gt-logos-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px 34px}
+.gt-logo{display:flex;align-items:center;justify-content:center;height:64px;min-width:120px;text-decoration:none;color:#16246b;font-weight:800;font-size:16px;filter:grayscale(1);opacity:.75;transition:filter .2s,opacity .2s}
+.gt-logo:hover{filter:none;opacity:1}.gt-logo img{max-height:56px;max-width:160px;object-fit:contain}
+@media (max-width:640px){.gt-logos-row{gap:14px 22px}.gt-logo{height:48px;min-width:90px;font-size:14px}.gt-logo img{max-height:42px;max-width:120px}}

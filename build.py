@@ -181,6 +181,20 @@ def write(path, doc):
 SITEMAP = []  # (path, alternates, lastmod)
 
 
+
+def partner_strip(lang):
+    """Logo strip of partner hospitals for the home page (logo if allowed, else the name)."""
+    data = yaml.safe_load(open(os.path.join(C, 'data', 'partners.yml'), encoding='utf-8'))
+    head = {'en': 'Our partner hospitals', 'ar': 'مستشفياتنا الشريكة', 'th': 'โรงพยาบาลพันธมิตรของเรา'}[lang]
+    items = ''
+    for p in data['partners']:
+        name = p[lang]['name']
+        inner = ('<img src="%s" alt="%s" loading="lazy" decoding="async">' % (esc(p['logo']), esc(name))
+                 if p.get('logo') else '<span>%s</span>' % esc(name))
+        items += '<a class="gt-logo" href="%s#%s" title="%s">%s</a>' % (lang_path(lang, '/partners/'), esc(p['key']), esc(name), inner)
+    return ('<section class="gt-logos"><div class="gt-wrap"><div class="gt-logos-h">%s</div>'
+            '<div class="gt-logos-row">%s</div></div></section>' % (esc(head), items))
+
 # ---------------------------------------------------------------- pages
 def build_pages():
     slugs = sorted(os.listdir(os.path.join(C, 'pages', 'en')))
@@ -190,7 +204,7 @@ def build_pages():
         alternates = {l: lang_path(l, rest) for l in LANGS if os.path.exists(os.path.join(C, 'pages', l, f))}
         for lang in alternates:
             meta, body = split_front(read(os.path.join(C, 'pages', lang, f)))
-            body = body.replace('<!--cta-->', partial('cta', lang))
+            body = body.replace('<!--cta-->', partial('cta', lang)).replace('<!--partner-logos-->', partner_strip(lang))
             pay = SITE.get('payments') or {}
             body = (body.replace('{{checkout_url}}', esc(pay.get('checkout_url', '') if pay.get('stripe_publishable_key') else ''))
                         .replace('{{stripe_pk}}', esc(pay.get('stripe_publishable_key', '')))
