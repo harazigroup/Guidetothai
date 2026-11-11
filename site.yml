@@ -15,6 +15,13 @@ company: "Al Harazi Group Co., Ltd."
 registration: "0605568002147"
 founded: 2017
 
+# Online payments (airport arrival booking page /vip-booking/).
+# Paste the Stripe PUBLISHABLE key (starts with pk_live_) to switch payments on.
+# While it is empty, the booking form sends the details on WhatsApp instead.
+payments:
+  stripe_publishable_key: ""
+  checkout_url: "https://lmwpilpcuxyzpygylclq.supabase.co/functions/v1/gtt-checkout"
+
 # Photos used across the site. Replace any link with your own photo
 # (for example /assets/img/our-airport.jpg after uploading it to assets/img).
 images:

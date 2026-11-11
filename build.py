@@ -191,6 +191,10 @@ def build_pages():
         for lang in alternates:
             meta, body = split_front(read(os.path.join(C, 'pages', lang, f)))
             body = body.replace('<!--cta-->', partial('cta', lang))
+            pay = SITE.get('payments') or {}
+            body = (body.replace('{{checkout_url}}', esc(pay.get('checkout_url', '') if pay.get('stripe_publishable_key') else ''))
+                        .replace('{{stripe_pk}}', esc(pay.get('stripe_publishable_key', '')))
+                        .replace('{{whatsapp}}', esc(str(SITE['whatsapp']))))
             jsonld = []
             if slug != 'index':
                 jsonld.append(breadcrumbs(lang, [(I18N[lang]['home'], lang_path(lang, '/')), (meta.get('title', '').split('|')[0].strip(), alternates[lang])]))

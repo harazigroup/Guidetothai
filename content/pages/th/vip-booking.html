@@ -1,0 +1,47 @@
+---
+title: "จองบริการรับที่สนามบินกรุงเทพฯ ชำระเงินออนไลน์ | guidetothai"
+description: "จองบริการรับที่สนามบิน VIP หรือแบบมาตรฐานที่สุวรรณภูมิหรือดอนเมือง ชำระเงินออนไลน์อย่างปลอดภัย ป้ายชื่อ ช่วยยกกระเป๋า ช่องทางด่วน และรถส่วนตัวไปโรงแรม"
+image: airport
+---
+<section class="gt-ph gt-ph-vip gt-ph-sm"><div class="gt-ph-inner"><div class="gt-pill">สุวรรณภูมิ · ดอนเมือง</div><h1 class="gt-ph-h">จองบริการรับที่สนามบิน</h1><p class="gt-ph-p">เลือกบริการ กรอกข้อมูลเที่ยวบิน และชำระเงินออนไลน์อย่างปลอดภัย คุณจะได้รับการยืนยันทางอีเมลและ WhatsApp</p></div></section>
+<section class="gt-sec"><div class="gt-wrap">
+<div id="gt-co" data-fn="{{checkout_url}}" data-pk="{{stripe_pk}}" data-lang="th" data-wa="{{whatsapp}}">
+<form id="gt-co-form" class="gt-co-grid" novalidate>
+<div class="gt-co-main">
+<h2 class="gt-co-h">1. เลือกบริการ</h2>
+<div class="gt-co-pkgs">
+<label class="gt-co-pkg"><input type="radio" name="pkg" value="vip" checked><div class="gt-co-pkg-top"><b>รับแบบ VIP</b><span class="gt-co-price">฿6,000 <small>ต่อท่าน</small></span></div><ul><li>เจ้าหน้าที่รอรับที่ประตูเครื่องบินพร้อมป้ายชื่อ</li><li>ช่องทางด่วนผ่านตรวจคนเข้าเมือง</li><li>ช่วยรับและยกกระเป๋า</li><li>พาไปส่งที่รถ</li><li>รถส่วนตัวไปส่งโรงแรม</li></ul></label>
+<label class="gt-co-pkg"><input type="radio" name="pkg" value="standard"><div class="gt-co-pkg-top"><b>รับแบบมาตรฐาน</b><span class="gt-co-price">฿1,500 <small>ต่อท่าน</small></span></div><ul><li>คนขับรอรับที่ทางออกโถงผู้โดยสารขาเข้าพร้อมป้ายชื่อ</li><li>รถส่วนตัวไปส่งโรงแรม</li></ul></label>
+</div>
+<h2 class="gt-co-h">2. ข้อมูลเที่ยวบินและผู้เดินทาง</h2>
+<div class="gt-co-fields">
+<label class="gt-co-fld"><span>ชื่อ-นามสกุล (แสดงบนป้าย)</span><input name="name" type="text" required placeholder="ตามหนังสือเดินทาง" minlength="2" maxlength="80" autocomplete="name"></label>
+<label class="gt-co-fld"><span>อีเมล</span><input name="email" type="email" required placeholder="" autocomplete="email"></label>
+<label class="gt-co-fld"><span>หมายเลข WhatsApp</span><input name="phone" type="tel" required placeholder="+66 xx xxx xxxx" autocomplete="tel" dir="ltr"></label>
+<label class="gt-co-fld"><span>หมายเลขเที่ยวบิน</span><input name="flight" type="text" required placeholder="EK372" maxlength="10" dir="ltr" style="text-transform:uppercase"></label>
+<label class="gt-co-fld"><span>วันที่เดินทางถึง</span><input name="date" type="date" required placeholder="" ></label>
+<label class="gt-co-fld"><span>เวลาเดินทางถึง</span><input name="time" type="time" required placeholder="" ></label>
+<label class="gt-co-fld"><span>สนามบิน</span><select name="airport" required><option value="BKK">สุวรรณภูมิ (BKK)</option><option value="DMK">ดอนเมือง (DMK)</option></select></label>
+<label class="gt-co-fld"><span>จำนวนผู้เดินทาง</span><input name="pax" type="number" required placeholder="" min="1" max="10" value="1"></label>
+<label class="gt-co-fld gt-co-wide"><span>ชื่อและที่อยู่โรงแรม</span><input name="hotel" type="text" required minlength="3" maxlength="300" placeholder="ชื่อโรงแรม ย่าน / ที่อยู่"></label>
+<label class="gt-co-fld"><span>จำนวนกระเป๋า</span><input name="bags" type="number"  placeholder="" min="0" max="20"></label>
+<label class="gt-co-fld"><span>หมายเหตุ (รถเข็น ที่นั่งเด็ก…)</span><input name="notes" type="text"  placeholder="ไม่บังคับ" maxlength="400"></label>
+</div>
+<p class="gt-co-note">ภูเก็ตหรือสนามบินอื่น? ติดต่อเราทาง WhatsApp</p>
+</div>
+<aside class="gt-co-side"><div class="gt-co-card">
+<h3>สรุปการจอง</h3>
+<div class="gt-co-row"><span id="gt-co-s-pkg"></span><span id="gt-co-s-unit"></span></div>
+<div class="gt-co-row gt-co-tot"><span>รวม</span><span id="gt-co-s-total"></span></div>
+<label class="gt-co-terms"><input type="checkbox" required> <span>ฉันยอมรับเงื่อนไขการจอง: จองล่วงหน้าอย่างน้อย 24 ชั่วโมงก่อนเดินทางถึง เปลี่ยนแปลงได้ฟรีจนถึง 24 ชั่วโมงก่อนถึง การยกเลิกภายใน 24 ชั่วโมงไม่สามารถคืนเงินได้</span></label>
+<p id="gt-co-err" class="gt-co-err" hidden></p>
+<button id="gt-co-submit" class="gt-btn gt-co-btn" type="submit">ไปที่การชำระเงิน</button>
+<p class="gt-co-secure">🔒 ชำระเงินปลอดภัยผ่าน Stripe · Visa, Mastercard และอื่นๆ</p>
+</div></aside>
+</form>
+<div id="gt-co-pay" class="gt-co-pay" hidden><h2 class="gt-co-h">ชำระเงิน</h2><div id="gt-co-stripe"></div><p><a href="" class="gt-co-back">← แก้ไขข้อมูล</a></p></div>
+<div id="gt-co-done" class="gt-co-done" hidden><div class="gt-co-done-ic">✓</div><h2 id="gt-co-done-h" class="gt-co-h">…</h2><div class="gt-co-done-ref" id="gt-co-done-ref"></div><p id="gt-co-done-d"></p><a id="gt-co-done-wa" class="gt-btn" href="#" target="_blank" rel="noopener">WhatsApp</a></div>
+<script type="application/json" id="gt-co-i18n">{"loading": "กรุณารอสักครู่…", "pay": "ไปที่การชำระเงิน", "ref": "หมายเลขการจอง", "err_net": "ไม่สามารถโหลดหน้าชำระเงินได้ กรุณาตรวจสอบการเชื่อมต่อ", "err_generic": "เกิดข้อผิดพลาด กรุณาลองอีกครั้งหรือจองทาง WhatsApp", "err_fields": "กรุณาตรวจสอบ:", "done_ok": "ได้รับการชำระเงินแล้ว การจองของคุณได้รับการยืนยัน ✅", "done_wait": "กำลังยืนยันการชำระเงิน…", "wa_intro": "สวัสดี guidetothai จองบริการรับที่สนามบิน:", "wa_paid": "ชำระเงินออนไลน์แล้ว", "pkgs": {"vip": "รับแบบ VIP", "standard": "รับแบบมาตรฐาน"}, "f": {"name": "ชื่อ-นามสกุล (แสดงบนป้าย)", "email": "อีเมล", "phone": "หมายเลข WhatsApp", "date": "วันที่เดินทางถึง", "time": "เวลาเดินทางถึง", "flight": "หมายเลขเที่ยวบิน", "airport": "สนามบิน", "pax": "จำนวนผู้เดินทาง", "hotel": "ชื่อและที่อยู่โรงแรม", "bags": "จำนวนกระเป๋า", "notes": "หมายเหตุ (รถเข็น ที่นั่งเด็ก…)", "pkg": "บริการ"}}</script>
+</div>
+</div></section>
+<script src="/assets/js/vip-checkout.js" defer></script>

@@ -360,3 +360,45 @@ div.gt-svc .gt-svc-dot::before{display:none}
 @media (max-width:767px){.gt-pt-grid{grid-template-columns:1fr}.gt-pt{padding:20px}}
 @media (max-width:479px){.gt-pt-why{grid-template-columns:1fr}}
 .gt-hosp-i{text-decoration:none;transition:border-color .25s}.gt-hosp-i:hover{border-color:#12a3b4}
+/* ---- airport arrival booking / checkout ---- */
+.gt-ph-sm{min-height:320px}
+.gt-co-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:32px;align-items:start;font-family:Tajawal}
+.gt-co-h{color:#16246b;font-size:24px;font-weight:800;margin:0 0 16px;font-family:Tajawal}
+.gt-co-main .gt-co-h:not(:first-child){margin-top:34px}
+.gt-co-pkgs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.gt-co-pkg{position:relative;display:block;border:2px solid #e3e6f3;border-radius:18px;padding:18px 20px;cursor:pointer;background:#fff;transition:border-color .2s,box-shadow .2s}
+.gt-co-pkg input{position:absolute;opacity:0;pointer-events:none}
+.gt-co-pkg.on{border-color:#f26a1b;box-shadow:0 14px 30px -18px rgba(242,106,27,.6)}
+.gt-co-pkg-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px}
+.gt-co-pkg-top b{color:#16246b;font-size:19px}.gt-co-price{color:#f26a1b;font-weight:800;font-size:22px;white-space:nowrap}.gt-co-price small{font-size:13px;color:#6b7290;font-weight:600}
+.gt-co-pkg ul{margin:0;padding-inline-start:18px;color:#3c4570;font-size:15px;line-height:1.7}
+.gt-co-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.gt-co-fld{display:flex;flex-direction:column;gap:6px;font-size:14.5px;font-weight:700;color:#16246b}
+.gt-co-fld input,.gt-co-fld select{font:inherit;font-weight:500;font-size:16px;color:#1c2240;border:1.5px solid #dfe3f0;border-radius:12px;padding:12px 14px;background:#fff;width:100%;box-sizing:border-box}
+.gt-co-fld input:focus,.gt-co-fld select:focus{outline:none;border-color:#16246b;box-shadow:0 0 0 3px rgba(22,36,107,.12)}
+.gt-co-wide{grid-column:1/-1}
+.gt-co-note{margin:14px 0 0;color:#6b7290;font-size:15px}
+.gt-co-side{position:sticky;top:96px}
+.gt-co-card{background:#f5f7fd;border:1px solid #e3e6f3;border-radius:20px;padding:22px}
+.gt-co-card h3{margin:0 0 14px;color:#16246b;font-size:20px;font-family:Tajawal}
+.gt-co-row{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #e3e6f3;color:#3c4570;font-size:16px}
+.gt-co-tot{border-bottom:0;font-size:22px;font-weight:800;color:#16246b}
+.gt-co-terms{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:#3c4570;line-height:1.55;margin:10px 0 14px}
+.gt-co-terms input{margin-top:4px;flex:none;width:18px;height:18px}
+.gt-co-btn{width:100%;border:0;cursor:pointer;font-family:Tajawal;text-align:center}
+.gt-co-btn:disabled{opacity:.6;cursor:wait}
+.gt-co-secure{margin:12px 0 0;text-align:center;color:#6b7290;font-size:13px}
+.gt-co-err{background:#fdecec;color:#a11d1d;border-radius:10px;padding:10px 12px;font-size:14px;margin:0 0 12px}
+.gt-co-pay{max-width:720px;margin:0 auto}.gt-co-back{color:#3c4570}
+.gt-co-done{max-width:620px;margin:20px auto;text-align:center;font-family:Tajawal}
+.gt-co-done-ic{width:72px;height:72px;margin:0 auto 14px;border-radius:50%;background:#1a9e5a;color:#fff;font-size:38px;line-height:72px}
+.gt-co-done-ref{display:inline-block;background:#f5f7fd;border:1px dashed #b9c0dc;border-radius:10px;padding:8px 16px;font-weight:800;color:#16246b;letter-spacing:.5px;margin-bottom:10px}
+.gt-co-done p{color:#3c4570}
+.gt-price-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.gt-price-card{background:#fff;border:1px solid #e3e6f3;border-radius:22px;padding:26px;display:flex;flex-direction:column;font-family:Tajawal}
+.gt-price-card.hot{border:2px solid #f26a1b;box-shadow:0 20px 40px -26px rgba(242,106,27,.6)}
+.gt-price-card h3{margin:0;color:#16246b;font-size:22px}.gt-price-card .amt{color:#f26a1b;font-size:38px;font-weight:800;margin:6px 0 2px}.gt-price-card .amt small{font-size:15px;color:#6b7290}
+.gt-price-card ul{flex:1;margin:12px 0 20px;padding-inline-start:18px;color:#3c4570;line-height:1.8}
+.gt-price-card .gt-btn{text-align:center}
+@media (max-width:900px){.gt-co-grid{grid-template-columns:1fr}.gt-co-side{position:static}}
+@media (max-width:640px){.gt-co-pkgs,.gt-co-fields,.gt-price-cards{grid-template-columns:1fr}.gt-co-wide{grid-column:auto}}

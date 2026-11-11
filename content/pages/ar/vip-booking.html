@@ -1,0 +1,47 @@
+---
+title: "احجز الاستقبال في مطار بانكوك وادفع أونلاين | guidetothai"
+description: "احجز استقبال VIP أو استقبال عادي في مطار سوفارنابومي أو دون موانغ وادفع أونلاين بأمان. لوحة باسمك، حمل الشنط، مسار سريع في الجوازات وسيارة خاصة للفندق."
+image: airport
+---
+<section class="gt-ph gt-ph-vip gt-ph-sm"><div class="gt-ph-inner"><div class="gt-pill">سوفارنابومي · دون موانغ</div><h1 class="gt-ph-h">احجز استقبالك في المطار</h1><p class="gt-ph-p">اختر الخدمة، واكتب بيانات رحلتك، وادفع أونلاين بأمان. يوصلك التأكيد على الإيميل والواتساب.</p></div></section>
+<section class="gt-sec"><div class="gt-wrap">
+<div id="gt-co" data-fn="{{checkout_url}}" data-pk="{{stripe_pk}}" data-lang="ar" data-wa="{{whatsapp}}">
+<form id="gt-co-form" class="gt-co-grid" novalidate>
+<div class="gt-co-main">
+<h2 class="gt-co-h">1. اختر الخدمة</h2>
+<div class="gt-co-pkgs">
+<label class="gt-co-pkg"><input type="radio" name="pkg" value="vip" checked><div class="gt-co-pkg-top"><b>استقبال VIP</b><span class="gt-co-price">฿6,000 <small>للشخص</small></span></div><ul><li>مرافق يستقبلك من الطائرة ومعه لوحة باسمك</li><li>مسار سريع لتخليص الجوازات</li><li>استلام الشنط وحملها عنك</li><li>توصيلك إلى السيارة</li><li>سيارة خاصة توصلك إلى الفندق</li></ul></label>
+<label class="gt-co-pkg"><input type="radio" name="pkg" value="standard"><div class="gt-co-pkg-top"><b>استقبال عادي</b><span class="gt-co-price">฿1,500 <small>للشخص</small></span></div><ul><li>سائق يستقبلك عند باب الخروج في صالة الوصول ومعه لوحة باسمك</li><li>سيارة خاصة توصلك إلى الفندق</li></ul></label>
+</div>
+<h2 class="gt-co-h">2. بيانات الرحلة والمسافر</h2>
+<div class="gt-co-fields">
+<label class="gt-co-fld"><span>الاسم الكامل (يُكتب على اللوحة)</span><input name="name" type="text" required placeholder="كما في الجواز" minlength="2" maxlength="80" autocomplete="name"></label>
+<label class="gt-co-fld"><span>الإيميل</span><input name="email" type="email" required placeholder="" autocomplete="email"></label>
+<label class="gt-co-fld"><span>رقم الواتساب</span><input name="phone" type="tel" required placeholder="+966 5x xxx xxxx" autocomplete="tel" dir="ltr"></label>
+<label class="gt-co-fld"><span>رقم الرحلة</span><input name="flight" type="text" required placeholder="EK372" maxlength="10" dir="ltr" style="text-transform:uppercase"></label>
+<label class="gt-co-fld"><span>تاريخ الوصول</span><input name="date" type="date" required placeholder="" ></label>
+<label class="gt-co-fld"><span>وقت الوصول</span><input name="time" type="time" required placeholder="" ></label>
+<label class="gt-co-fld"><span>المطار</span><select name="airport" required><option value="BKK">سوفارنابومي (BKK)</option><option value="DMK">دون موانغ (DMK)</option></select></label>
+<label class="gt-co-fld"><span>عدد المسافرين</span><input name="pax" type="number" required placeholder="" min="1" max="10" value="1"></label>
+<label class="gt-co-fld gt-co-wide"><span>اسم الفندق وعنوانه</span><input name="hotel" type="text" required minlength="3" maxlength="300" placeholder="اسم الفندق والمنطقة / العنوان"></label>
+<label class="gt-co-fld"><span>عدد الشنط</span><input name="bags" type="number"  placeholder="" min="0" max="20"></label>
+<label class="gt-co-fld"><span>ملاحظات (كرسي متحرك، كرسي أطفال…)</span><input name="notes" type="text"  placeholder="اختياري" maxlength="400"></label>
+</div>
+<p class="gt-co-note">بوكيت أو مطار آخر؟ راسلنا على الواتساب.</p>
+</div>
+<aside class="gt-co-side"><div class="gt-co-card">
+<h3>ملخص الحجز</h3>
+<div class="gt-co-row"><span id="gt-co-s-pkg"></span><span id="gt-co-s-unit"></span></div>
+<div class="gt-co-row gt-co-tot"><span>الإجمالي</span><span id="gt-co-s-total"></span></div>
+<label class="gt-co-terms"><input type="checkbox" required> <span>أوافق على شروط الحجز: الحجز قبل الوصول بـ 24 ساعة على الأقل، التعديل مجاني حتى 24 ساعة قبل الوصول، والإلغاء خلال آخر 24 ساعة غير مسترد.</span></label>
+<p id="gt-co-err" class="gt-co-err" hidden></p>
+<button id="gt-co-submit" class="gt-btn gt-co-btn" type="submit">المتابعة للدفع</button>
+<p class="gt-co-secure">🔒 دفع آمن عبر Stripe · فيزا وماستركارد وغيرها</p>
+</div></aside>
+</form>
+<div id="gt-co-pay" class="gt-co-pay" hidden><h2 class="gt-co-h">الدفع</h2><div id="gt-co-stripe"></div><p><a href="" class="gt-co-back">→ تعديل البيانات</a></p></div>
+<div id="gt-co-done" class="gt-co-done" hidden><div class="gt-co-done-ic">✓</div><h2 id="gt-co-done-h" class="gt-co-h">…</h2><div class="gt-co-done-ref" id="gt-co-done-ref"></div><p id="gt-co-done-d"></p><a id="gt-co-done-wa" class="gt-btn" href="#" target="_blank" rel="noopener">WhatsApp</a></div>
+<script type="application/json" id="gt-co-i18n">{"loading": "لحظة من فضلك…", "pay": "المتابعة للدفع", "ref": "رقم الحجز", "err_net": "ما قدرنا نحمّل صفحة الدفع. تأكد من الاتصال بالإنترنت.", "err_generic": "صار خطأ. حاول مرة ثانية أو احجز على الواتساب.", "err_fields": "تأكد من:", "done_ok": "تم استلام الدفع، وحجز استقبالك مؤكد ✅", "done_wait": "جاري تأكيد الدفع…", "wa_intro": "السلام عليكم guidetothai، حجز استقبال في المطار:", "wa_paid": "دفعت أونلاين.", "pkgs": {"vip": "استقبال VIP", "standard": "استقبال عادي"}, "f": {"name": "الاسم الكامل (يُكتب على اللوحة)", "email": "الإيميل", "phone": "رقم الواتساب", "date": "تاريخ الوصول", "time": "وقت الوصول", "flight": "رقم الرحلة", "airport": "المطار", "pax": "عدد المسافرين", "hotel": "اسم الفندق وعنوانه", "bags": "عدد الشنط", "notes": "ملاحظات (كرسي متحرك، كرسي أطفال…)", "pkg": "الخدمة"}}</script>
+</div>
+</div></section>
+<script src="/assets/js/vip-checkout.js" defer></script>
