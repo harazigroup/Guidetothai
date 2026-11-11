@@ -12,13 +12,19 @@ const SITE = (Deno.env.get("GTT_SITE_URL") || "https://guidetothai.co").replace(
 const PACKAGES: Record<string, { thb: number; name: string; desc: string }> = {
   vip: { thb: 6000, name: P.name,
     desc: "Meet at the aircraft with name sign, fast track immigration, luggage help, escort to the car, private car to hotel" },
-  standard: { thb: 1500, name: "Airport Arrival – Bangkok (per person)",
+  standard: { thb: 1500, name: "Airport Arrival – Thailand (per person)",
     desc: "Meet at the arrival hall exit with name sign, private car to hotel" },
 };
 const MAX_PAX = 10;
 const AIRPORTS: Record<string, string> = {
   BKK: "Suvarnabhumi Airport (BKK)",
   DMK: "Don Mueang Airport (DMK)",
+  HKT: "Phuket Airport (HKT)",
+  CNX: "Chiang Mai Airport (CNX)",
+  KBV: "Krabi Airport (KBV)",
+  USM: "Samui Airport (USM)",
+  HDY: "Hat Yai Airport (HDY)",
+  UTP: "U-Tapao (Pattaya) Airport (UTP)",
 };
 
 const cors = {
